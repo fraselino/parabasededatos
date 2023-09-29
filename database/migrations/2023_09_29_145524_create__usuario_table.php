@@ -17,6 +17,9 @@ class CreateUsuarioTable extends Migration
             $table->id();
             $table->string("nombre");
             $table->string("nombrecompleto");
+            $table->created_at();
+            $table->updated_at();
+            $table->deleted_at();
             $table->timestamps();
         });
     }
